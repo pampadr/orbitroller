@@ -1,0 +1,78 @@
+<!-- support.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <!-- Google Fonts & CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top wave shape -->
+    <div class="top-wave">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+            <path d="M0,50 C150,150 350,0 500,100 L500,0 L0,0 Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+    <!-- Main container for support page -->
+    <div class="home-container">
+        <!-- Page title -->
+        <h1 class="title">Support</h1>
+        <!-- Support form -->
+        <form action="submit_form.php" method="POST" class="support-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    placeholder="Enter your name"
+                    required
+                >
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="Enter your email"
+                    required
+                >
+            </div>
+            <div class="form-group">
+                <label for="message">Your message:</label>
+                <textarea 
+                    id="message" 
+                    name="message" 
+                    rows="6" 
+                    placeholder="Describe your issue or question"
+                    required
+                ></textarea>
+            </div>
+            <!-- Submit button -->
+            <button type="submit" class="btn">Send</button>
+        </form>
+        <!-- Back to Home -->
+        <p style="margin-top: 20px;">
+            <a href="index.html" class="btn" style="text-decoration: none;">Back to Home</a>
+        </p>
+    </div>
+
+    <!-- Footer with wave shape -->
+    <footer class="footer-section">
+        <div class="bottom-wave">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+                <path d="M0,0 C150,100 350,50 500,100 L500,150 L0,150 Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <p class="footer-text">© 2025 Our App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
